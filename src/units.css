@@ -52,6 +52,10 @@ div.gallery img {
 }
 
 
+.caption {
+    display: block;
+}
+
 div.container{
 width: 85%;
 height: 610px;
