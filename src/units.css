@@ -1,0 +1,66 @@
+/* Below line is used for online Google font */
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+h2{
+padding: 30px 35px;
+margin: -10px -50px;
+border-radius: 110px 10px 0 0;
+margin-left: -37px;
+}
+
+.circle{
+    width:50px;
+    height:50px;
+    border-radius:250px;
+    border: 3px solid black;
+    font-size:20px;
+    color:black;
+	line-height:50px;
+    text-align:center;
+    background:white;
+    margin-left: 175px;
+    margin-top: -40px;
+    }
+
+hr{
+margin: 10px -50px;
+border: 0;
+border-top: 1px solid #ccc;
+margin-bottom: 40px;
+}
+
+.avatar-text{
+    position: relative;
+    top: -60px; /* This will move it 20px up */
+    left: 90%;
+}
+
+
+
+input[type=text] {
+  position: relative;
+  border-radius: 15%;
+  margin-top: 8px;
+  left:-90px;
+  font-size: 12px;
+}
+
+
+div.container{
+width: 85%;
+height: 610px;
+margin:35px auto;
+font-family: 'Raleway', sans-serif;
+}
+div.main{
+
+font-family: raleway;
+
+}
+
+img {
+
+float:right;
+margin-top: -80px;
+}
+
+
