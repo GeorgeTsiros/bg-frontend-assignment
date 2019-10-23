@@ -34,12 +34,13 @@ font-family: 'Raleway', sans-serif;
 }
 div.main{
 width: 300px;
-padding: 170px 150px 125px;
+padding: 70px 50px 25px;
 border: 2px solid black;
 border-radius: 1px;
+border-color: Gainsboro;
 font-family: raleway;
-float:left;
-margin-top:50px;
+margin-top:150px;
+margin-left: 150px;
 }
 input[type=text],input[type=password]{
 width: 100%;
@@ -87,7 +88,7 @@ height: 40px;
 border-radius: 5px;
 padding: 10px 0;
 outline:none;
-align-self: right;
+float: right;
 }
 input[type=button]:hover{
 background-color: Gainsboro;
