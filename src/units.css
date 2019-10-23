@@ -58,7 +58,9 @@ div.gallery img {
     margin:10px;
     margin-left: 15px;
 }
-
+.checked {
+  color: orange;
+}
 div.container{
 width: 85%;
 height: 610px;
