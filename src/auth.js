@@ -1,18 +1,21 @@
-var clientId = "MyApp";
-var clientSecret = "MySecret";
+const fetch = require("node-fetch")
+const base64 = require('base-64');
+global.Headers = fetch.Headers;
 
- var authorizationBasic = $.base64.btoa(clientId + ':' + clientSecret);
-// var authorizationBasic = window.btoa(clientId + ':' + clientSecret);
+let url = 'http://mars.theblueground.net/api/auth/login';
+let email = 'ben@2041.uk';
+let password = 'idietoosoon';
 
-var request = new XMLHttpRequest();
-request.open('POST', oAuth.AuthorizationServer, true);
-request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
-request.setRequestHeader('Authorization', 'Basic ' + authorizationBasic);
-request.setRequestHeader('Accept', 'application/json');
-request.send("username=John&password=Smith&grant_type=password");
+let headers = new Headers();
 
-request.onreadystatechange = function () {
-    if (request.readyState === 4) {
-       alert(request.responseText);
-    }
-};
+headers.set('Authorization', 'Basic ' + base64.encode(email + ":" + password));
+
+fetch(url, {method:'GET',
+        headers: headers,
+       })
+.then(response => response.json())
+.then(json => console.log(json));
+
+function parseJSON(response) {
+return response.json()
+}
